@@ -17,7 +17,6 @@ class Version1 extends DigestAbstract
             $this->getHashedBody($request),
             $this->getContentType($requestSigner, $request),
             $this->getTimestamp($requestSigner, $request),
-            $this->getCustomHeaders($requestSigner, $request),
             $this->getResource($request),
         );
 
